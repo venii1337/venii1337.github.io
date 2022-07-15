@@ -5,147 +5,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Alliance Advisory</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <style>
+        body{
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #jumbotron{
+            background: url('./bg-img.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #overlay{
+            padding-left: 5em;
+            padding-right: 5em;
+            padding-top: 10em;
+            padding-bottom: 10em;
+            background-color: rgba(0, 0, 0, 0.479);
+        }
+    </style>
 </head>
 <body>
-    <div class="nav">
-        <div class="nav-logo">
-            <h1>Global Alliance</h1>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2>Global Alliance</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-       <div class="nav-links" id="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Our Services</a>
-            <a href="#team">Our Team</a>
-            <a href="#contact">Contact</a>
-       </div>
-       <div class="nav-hamburger">
-            <a href="javascript:void(0);" onclick="navMenu()">
-                ☰
-            </a>
-       </div>
-    </div>
+    </nav>
 
-    <div class="section-links" id="section-links">
-        <a href="#about">About</a>
-        <a href="#services">Our Services</a>
-        <a href="#team">Our Team</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <br>
 
-    <div class="section-hero">
-        <div class="hero-text">
-            <h2>
-                We provide investment banking and financial advisory services.  
-            </h2>
-            <a href="#about">Learn more</a>
-        </div> 
-    </div>
-
-    <div class="section-about" id="about">
-        <div class="about-text">
-            <h2>About Us</h2>
-            <p>
-                Global Alliance Advisory Company Limited (“Global Alliance Co. Ltd.”) engages in Investment Banking and Financial Advisory Services.  
-            </p>
-            <p>
-                Global Alliance is capable of cooperating with top levels of management & executives of multinational enterprises, listed companies in the Stock Exchange of  Thailand, large scale corporations, financial institutions, underwriters, lenders, investors, professional service providers, regulators, ultimate shareholders and beneficial owners.
-            </p>
-            <p>
-                Our clients and linkages in the Stock Exchange of Thailand along with our partners across almost all industries within the Thai Economy allows us to utilize an extensive network locally and abroad.
-            </p>
-            <p>
-                Our head team has wide-ranging decades of experience in investment banking, capital market and corporate finance with the background from various financial  institutions, brokerage companies and boutique advisory houses. 
-            </p>
-            <p>
-                Our key advantage is our flexibility to serve the demands of our customers and clients with our linkages in the Stock Exchange of Thailand along with our partners across almost all industries within the Thai Economy. This allows us to utilize an extensive network locally and abroad.
-            </p>
-            <p>
-                Our goal is to satisfy the wishes of our potential clients and further expand our network. Connecting the Kingdom with other international business hubs.
-            </p>
+    <!--Jumbotron-->
+    <div class="mb-4 bg-light border rounded-3" id="jumbotron">
+        <div class="container-fluid text-white rounded-3" id="overlay">
+            <h1 class="display-5 fw-bold">We provide investment banking and financial advisory services.</h1>
+            <p class="col-md-8 fs-4">Global Alliance works with executives and multinational enterprises listed in the Stock Exchange of Thailand.</p>
+            <a class="btn btn-primary btn-lg" href="#about">Learn more</a>
         </div>
     </div>
 
-    <div class="section-services" id="services">
-        <div class="services-text">
-            <h2>
-                Our Services
-            </h2>
-
-            <h3>
-                Mergers and Acquisitions
-            </h3>
-
-            <p>Our connections within the Stock Exchange of Thailand and our partners across a variety of industries in within the Thai Economy, allows use to utilize an extensive network locally and abroad.</p>
-
-            <h3>
-                Raising Funds
-            </h3>
-
-            <p>We raise funds through the use of debt and equity instruments, focusing on finding funding sources abroad to provide our clients with financial costs that are lower than domestic financial institutions.</p>
-
-            <h3>
-                Restructuring and Rehabilitation
-            </h3>
-
-            <p>We also prepare our clients for listing their company on the Stock Exchange of Thailand. This includes restructuring of business groups and family shareholdings. We also give advice on setting up an accounting and internal control system.</p>
-
-            <h3>
-                Independent Financial Advice
-            </h3>
-
-            <p>Lastly, we provide an independent opinion on problems our clients face. This includes company valuations and general advice in relation to regulations in Thailand.</p>
-        </div>
+    <!--About-->
+    <div class="h-100 p-5 bg-light border rounded-3" id="about">
+        <h1>About Us</h1>
+        <p>
+            <span>Global Alliance Advisory Company Limited (“Global Alliance Co. Ltd.”) engages in Investment Banking and Financial Advisory Services.</span>
+            <br>
+            <br>
+            <span>Global Alliance is capable of cooperating with top levels of management & executives of multinational enterprises, listed companies in the Stock Exchange of Thailand, large scale corporations, financial institutions, underwriters, lenders, investors, professional service providers, regulators, ultimate shareholders and beneficial owners.</span>
+            <br>
+            <br>
+            <span>Our clients and linkages in the Stock Exchange of Thailand along with our partners across almost all industries within the Thai Economy allows us to utilize an extensive network locally and abroad.</span>
+            <br>
+            <br>
+            <span>Our head team has wide-ranging decades of experience in investment banking, capital market and corporate finance with the background from various financial institutions, brokerage companies and boutique advisory houses.</span>
+            <br>
+            <br>
+            <span>Our key advantage is our flexibility to serve the demands of our customers and clients with our linkages in the Stock Exchange of Thailand along with our partners across almost all industries within the Thai Economy. This allows us to utilize an extensive network locally and abroad.</span>
+            <br>
+            <br>
+            <span>Our goal is to satisfy the wishes of our potential clients and further expand our network. Connecting the Kingdom with other international business hubs.</span>
+        </p>
     </div>
 
-    <div class="section-team" id="team">
-        <div class="team-text">
-            <h2>Our Team</h2>
-            <h3>Nanthaya Uchupalanan</h3>
-            <h4>Managing Director</h4>
-            <p>Nanthaya has over three decades of experience in capital markets, investment banking and financial advisory. Her experience dealing with sophisticated group structures within corporate finance has been beneficial to our clients.</p>
-            <h3>Tawatchai Chinokul</h3>
-            <h4>Executive Vice President</h4>
-            <p>Tawatchai has over two decades of experience in corporate finance, investment banking, and financial advisory. He has led and participated in the execution of many investment banking and financial advisory transactions.</p>
-        </div>
-    </div>
+    <br>
 
-    <div class="section-contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact us</h2>
-        </div>
-        <div class="contact-form">
-            <form class="form-elements">
-                <label for="fname">First name</label><br><br>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last name</label><br><br>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">Email</label><br><br>
-                <input type="text" id="email" name="email"><br><br>
-                <label for="message">Send us a message</label><br><br>
-                <textarea id="message" name="message"></textarea><br><br><br>
-                <input type="submit" id="submit" value="Submit">
-            </form>
+    <!--Services-->
+    <div class="container px-5 py-5 bg-dark border rounded-3" id="services">
+        <h1 class="pb-2 border-bottom  text-white">Our Services</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start text-white">
+            <div>
+              <h4 class="fw-bold mb-0">Mergers and Acquisitions</h4>
+              <br>
+              <p>Our connections within the Stock Exchange of Thailand and our partners across a variety of industries in within the Thai Economy, allows use to utilize an extensive network locally and abroad.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start text-white">
+            <div>
+              <h4 class="fw-bold mb-0">Raising Funds</h4>
+              <br>
+              <p>We raise funds through the use of debt and equity instruments, focusing on finding funding sources abroad to provide our clients with financial costs that are lower than domestic financial institutions.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start text-white">
+            <div>
+              <h4 class="fw-bold mb-0">Restructuring and Rehabilitation</h4>
+              <br>
+              <p>We also prepare our clients for listing their company on the Stock Exchange of Thailand. This includes restructuring of business groups and family shareholdings. We also give advice on setting up an accounting and internal control system.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start text-white">
+            <div>
+              <h4 class="fw-bold mb-0">Independent Financial Advice</h4>
+              <br>
+              <p>Lastly, we provide an independent opinion on problems our clients face. This includes company valuations and general advice in relation to regulations in Thailand.</p>
+            </div>
+          </div>
         </div>
     </div>
+    <br>
 
-    <div class="section-footer">
-        <div class="footer-text">
-            <p>© 2022 Global Alliance Advisory Company Limited</p> 
-        </div>
+    <!--Team-->
+    <div class="h-100 p-5 bg-light border rounded-3" id="team">
+        <h1>Our Team</h1>
+        <br>
+        <h2>Nanthaya Uchupalanan</h2>
+        <h5>Managing Director</h5>
+        <p>
+            Nanthaya has over three decades of experience in capital markets, investment banking and financial advisory. Her experience dealing with sophisticated group structures within corporate finance has been beneficial to our clients.
+        </p>
+        <br>
+        <h2>Tawatchai Chinokul</h2>
+        <h5>Executive Vice President</h5>
+        <p>
+            Tawatchai has over two decades of experience in corporate finance, investment banking, and financial advisory. He has led and participated in the execution of many investment banking and financial advisory transactions.
+        </p>
     </div>
+    <br>
+
+    <!--Contact-->
+    <div class="h-100 p-5 bg-dark border rounded-3 text-white" id="contact">
+        <h1>Contact Us</h1>
+        <br>
+        <h2>Email:</h2>
+        <h5>infothailand.globalalliance@gmail.com</h5>
+        <h5>nanthaya.globalalliance@gmail.com</h5>
+        <h5>tawatchai.globalalliance@gmail.com</h5>
+    </div>
+    <br>
+
+    <!--Footer-->
+    <div class="container">
+        <footer class="py-3 my-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our Team</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Global Alliance Advisory</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-<script>
-    function navMenu(){
-        var x = document.getElementById('section-links');
-
-        if (x.style.display === 'flex'){
-            x.style.display = 'none';
-        } else {
-            x.style.display = 'flex';
-        }
-    }
-</script>
-
 </html>
